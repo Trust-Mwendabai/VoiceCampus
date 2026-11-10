@@ -1,27 +1,102 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Share feedback | VoiceCampus</title><meta name="description" content="Send feedback anonymously or with your name."><meta name="theme-color" content="#16123f">
-<script>try{var t=localStorage.getItem("vc_theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head>
-<body data-page="submit"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol><symbol id="i-inbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></symbol><symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M12 21V3M19 21v-7"/></symbol><symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol><symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></symbol><symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol><symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 21.5V4.5"/></symbol><symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-3 8 3v16M9 21v-5h6v5M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></symbol><symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol><symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-8-4.6-8-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 8 2.3c0 5.6-8 10.2-8 10.2z"/></symbol><symbol id="i-laptop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol><symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol><symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol></svg>
-<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark"><i></i><i></i><i></i></span>voicecampus</a>
-<nav class="dnav" aria-label="Main"><a href="index.html">Home</a><a href="feedback.html">Inbox</a><a href="insights.html">Insights</a></nav>
-<div class="acts"><button class="iconbtn" id="theme" aria-label="Toggle dark mode"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg></button><a class="btn dsk" href="submit.html">Share feedback</a></div></div></header>
-<main class="wrap"><div class="ph"><h1>Share your feedback</h1><p>Be specific and constructive. One issue or idea per submission.</p></div>
-<div class="formgrid"><form class="card form" id="form" novalidate>
-<fieldset><legend>Category</legend><div class="chips pick" id="catPick"></div></fieldset>
-<label>Title<input id="title" maxlength="90" placeholder="e.g. Extend library hours during exams" required></label>
-<label>Campus area <em>(optional)</em><input id="loc" maxlength="60" list="areas" placeholder="e.g. Main Library"><datalist id="areas"><option>Main Library</option><option>Student Centre</option><option>Lecture Block</option><option>Hostels</option><option>Sports Area</option><option>Cafeteria</option></datalist></label>
-<label>Details<textarea id="msg" rows="6" maxlength="900" placeholder="What happened, where, and what would help?" required></textarea><span class="cc" id="cc">0 / 900</span></label>
-<div class="anon"><div><b>Submit anonymously</b><small>Your name is not attached.</small></div><label class="sw"><input type="checkbox" id="anon" checked><span></span><i class="sr">Anonymous</i></label></div>
-<label id="nameF" hidden>Your name<input id="name" maxlength="70" placeholder="Your name"></label>
-<p class="err" id="err" role="alert"></p><div class="actions"><button type="reset" class="btn ghost">Clear</button><button class="btn" type="submit">Send feedback</button></div></form>
-<aside class="aside"><div class="card dark"><h3>A good submission</h3><ul><li>Names the place or service involved</li><li>Says what happened and how often</li><li>Suggests what would improve it</li></ul></div></aside></div>
-<div class="card done" id="done" hidden><div class="okc"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div><h1>Feedback sent</h1><p>Keep this reference to find it in the inbox.</p><div class="ref" id="ref"></div>
-<div class="actions c"><button class="btn ghost" id="copy">Copy reference</button><a class="btn" id="view" href="feedback.html">View in inbox</a></div><button class="link" id="again">Send another</button></div></main>
-<footer class="foot wrap"><span class="brand sm">voicecampus</span><p>A frontend prototype. Submissions are saved in this browser only.</p><button class="link" id="reset">Reset demo data</button></footer>
-<nav class="tabs" aria-label="Mobile"><a href="index.html" class="tab"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg><span>Home</span></a><a href="feedback.html" class="tab"><svg class="ic" aria-hidden="true"><use href="#i-inbox"/></svg><span>Inbox</span></a><a href="submit.html" class="tab-main" aria-current="page"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg><span>Share</span></a><a href="insights.html" class="tab"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg><span>Insights</span></a></nav>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="app.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e1630">
+  <title>VoiceCampus | Submit feedback</title>
+  <script>try{var t=localStorage.getItem("voicecampus_theme");if(t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="submit">
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <header class="topbar" id="topbar" data-title="Submit feedback"></header>
+    <main class="page">
+      <div class="page-head">
+        <div>
+          <div class="eyebrow">Have your say</div>
+          <h1>Share your feedback</h1>
+          <p class="lead">Your perspective can help create a better campus experience.</p>
+        </div>
+        <span class="chip"><span data-icon="sparkles" data-size="14"></span> Your voice counts</span>
+      </div>
+
+      <div class="form-layout">
+        <form class="card form-card" id="feedbackForm" novalidate>
+          <div class="form-title">
+            <span class="step">01</span>
+            <div><h3>Tell us what's on your mind</h3><p>Be clear and constructive. Every submission matters.</p></div>
+          </div>
+
+          <div class="field">
+            <label for="title">Feedback title <em class="req" aria-hidden="true">*</em></label>
+            <input class="control" id="title" name="title" maxlength="90" placeholder="Give your feedback a clear title" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="category">Category <em class="req" aria-hidden="true">*</em></label>
+              <select class="control" id="category" required>
+                <option value="">Choose a category</option>
+                <option>Academics</option><option>Administration</option><option>Infrastructure</option><option>Student Welfare</option><option>Technology</option><option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="location">Campus area <small>(optional)</small></label>
+              <input class="control" id="location" maxlength="60" placeholder="e.g. Library, Block B">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Your message <em class="req" aria-hidden="true">*</em></label>
+            <textarea class="control" id="message" maxlength="900" rows="6" placeholder="Describe your experience, concern or idea. Include any details that could help the institution understand it…" required></textarea>
+            <div class="field-hint"><span>Keep it respectful and solution-focused.</span><span id="charCount">0 / 900</span></div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="toggle-row">
+            <div>
+              <strong><span data-icon="eyeoff" data-size="18"></span> Submit anonymously</strong>
+              <p id="anonDesc">Your name will not be attached to this submission.</p>
+            </div>
+            <label class="switch"><input id="anonymous" type="checkbox" role="switch" aria-describedby="anonDesc" aria-label="Submit anonymously" checked><span class="track"></span></label>
+          </div>
+          <div class="field hidden" id="nameField">
+            <label for="studentName">Your name</label>
+            <input class="control" id="studentName" maxlength="70" placeholder="Enter your name" autocomplete="name">
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-ghost" id="clearForm" type="button">Clear form</button>
+            <button class="btn btn-primary" type="submit">Submit feedback <span data-icon="arrow"></span></button>
+          </div>
+          <p class="privacy"><span data-icon="lock" data-size="16"></span> Demo privacy note: this prototype stores submissions in your browser only.</p>
+        </form>
+
+        <aside class="aside">
+          <div class="aside-hero">
+            <div class="help-ico" data-icon="sparkles" data-size="20"></div>
+            <h3>A better campus begins with a conversation.</h3>
+            <p>Thoughtful feedback helps highlight what matters and where positive change can happen.</p>
+          </div>
+          <div class="card tips">
+            <h4>Before you submit</h4>
+            <div class="tip"><b>01</b><span>Focus on one issue or idea at a time.</span></div>
+            <div class="tip"><b>02</b><span>Share enough detail to explain the situation.</span></div>
+            <div class="tip"><b>03</b><span>Suggest a possible improvement where you can.</span></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="app-footer"><strong>VoiceCampus</strong><span>Student voice · Institutional progress</span><span>Frontend prototype</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-icon" id="toastIcon"></span><p id="toastMessage"></p></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
